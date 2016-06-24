@@ -1,6 +1,8 @@
 # Java Style Guide
 
-Heavily influenced by Android's [Code Style for Contributors](https://source.android.com/source/code-style.html). Many thanks to the editors of this detailed and thoughtful guide.
+Heavily influenced by Android's [Code Style for Contributors](https://source.android.com/source/code-style.html) and Ribot's [project guidelines](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md). Many thanks to the editors of these detailed and thoughtful guides.
+
+Note that Google's [Java guide](https://google.github.io/styleguide/javaguide.html) is also full of good guidance but delves too deeply into the minutiae of the language for the purposes of this style guide. You are encouraged to read it and apply reasonable lessons.
 
 ## Environment
 
@@ -488,12 +490,12 @@ __Method chain case__
 When multiple methods are chained in the same line - for example when using Builders - every call to a method should go in its own line, breaking the line before the `.`
 
 ```java
-Picasso.with(context).load("http://ribot.co.uk/images/sexyjoe.jpg").into(imageView);
+Picasso.with(context).load("http://cdn.domain.com/image.png").into(imageView);
 ```
 
 ```java
 Picasso.with(context)
-        .load("http://ribot.co.uk/images/sexyjoe.jpg")
+        .load("http://cdn.domain.com/image.png")
         .into(imageView);
 ```
 
@@ -502,12 +504,12 @@ __Long parameters case__
 When a method has many parameters or its parameters are very long, we should break the line after every comma `,`
 
 ```java
-loadPicture(context, "http://ribot.co.uk/images/sexyjoe.jpg", mImageViewProfilePicture, clickListener, "Title of the picture");
+loadPicture(context, "http://cdn.domain.com/image.png", mImageViewProfilePicture, clickListener, "Title of the picture");
 ```
 
 ```java
 loadPicture(context,
-        "http://ribot.co.uk/images/sexyjoe.jpg",
+        "http://cdn.domain.com/image.png",
         mImageViewProfilePicture,
         clickListener,
         "Title of the picture");
