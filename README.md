@@ -23,7 +23,7 @@ Code is meaningless if there's no way for the user to use it. The UI programming
 
 ### Layouts
 
-Keep your layout XML as simple as possible. [Proper usage](https://TODO) of [Data Binding](https://developer.android.com/topic/libraries/data-binding/index.html) is acceptable. However, don't bind click events because it makes harder to read code in associated class (usually Fragment, View or Activity). If a view has conditions, make separate views that are composable and load the appropriate one as needed.
+Keep your layout XML as simple as possible. [Proper usage](https://github.com/amco/java-style-guide/blob/data_binding_style/Data%20Binding%20Style%20Guide) of [Data Binding](https://developer.android.com/topic/libraries/data-binding/index.html) is acceptable. However, don't bind click events because it makes harder to read code in associated class (usually Fragment, View or Activity). If a view has conditions, make separate views that are composable and load the appropriate one as needed.
 
 Avoid writing layouts in code. There's nothing inherently wrong with code-based layouts but it helps to separate concerns, allow non-developers easier access to layout modifications, and generally keep classes smaller sizes.
 
