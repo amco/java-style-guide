@@ -1,0 +1,9 @@
+# Android Data Binding Style Guide
+
+[Data Binding Library](https://developer.android.com/topic/libraries/data-binding/index.html) is aimed to decrease boilerplate code that doesn’t require any brainpower (like findViewById calls, for example).
+
+## Layouts
+
+Data under <data> tag should be present in layout itself. In case data is pretty big, it is prefferable to move it out to separate file inside xml folder.
+
+Reasonable case to use data binding is to set variable value to view property. However, there is a suggestion to avoid binding click events.
